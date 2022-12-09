@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EJS Is Fun | <%= halaman %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css" />
+</head>
+
+<body>
+    <!-- begin:: navbar -->
+    <%- include('./partials/navbar'); %>
+    <!-- end:: navbar -->
+
+    <!-- begin:: body -->
+    <%- body %>
+    <!-- end:: body -->
+
+    <!-- begin:: footer -->
+    <%- include('./partials/footer'); %>
+    <!-- end:: footer -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- begin:: javascript local -->
+    <%- script -%>
+    <!-- end:: javascript local -->
+</body>
+
+</html>
