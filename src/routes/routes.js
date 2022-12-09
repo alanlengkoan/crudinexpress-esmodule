@@ -2,10 +2,7 @@ import express from "express";
 import {
     home,
     about,
-    contact,
-    hello,
-    hai,
-    urlTest
+    contact
 } from "../controllers/pages.js";
 import {
     signin,
@@ -26,11 +23,5 @@ router.get("/signin", signin);
 router.get("/signup", signup);
 router.get("/signout", signout);
 // end:: auth
-
-// begin:: testing
-router.get("/hello", hello);
-router.get("/hai", hai);
-router.get("/url", urlTest);
-// end:: testing
 
 export default router;

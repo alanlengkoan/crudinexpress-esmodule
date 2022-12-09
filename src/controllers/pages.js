@@ -22,34 +22,8 @@ const contact = (req, res) => {
     res.render('pages/contact/view', data);
 };
 
-const hello = (req, res) => {
-    if (req.query.lastName === undefined) {
-        res.send(`Hello ${req.query.firstName}`);
-    } else {
-        res.send(`Hello ${req.query.firstName} ${req.query.lastName}`);
-    }
-};
-
-const hai = (req, res) => {
-    res.send(`Hai`);
-};
-
-const urlTest = (req, res) => {
-    res.json({
-        path: req.path,
-        hostname: req.hostname,
-        protocol: req.protocol,
-        baseUrl: req.baseUrl,
-        originalUrl: req.originalUrl,
-        secure: req.secure,
-    });
-};
-
 export {
     home,
     about,
-    contact,
-    hello,
-    hai,
-    urlTest
+    contact
 };
